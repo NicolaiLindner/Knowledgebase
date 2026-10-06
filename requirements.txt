@@ -1,0 +1,7 @@
+# Kern (Lint, Traum, Lage)
+pyyaml>=6
+# PDF-Quellen aufbereiten (tools/pdf.py) - optional
+pymupdf>=1.23
+pdfplumber>=0.10
+# Modul Datenbank (tools/sql.py) - optional, braucht zusaetzlich den "ODBC Driver 18 for SQL Server"
+pyodbc>=5

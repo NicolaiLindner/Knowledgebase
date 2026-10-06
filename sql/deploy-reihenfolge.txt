@@ -1,0 +1,7 @@
+# Reihenfolge fuer tools/deploy.ps1 (Modul Datenbank): eine Zeile je Datei, Abhaengigkeiten zuerst.
+# Zeilen mit EXEC sind Prozeduraufrufe und laufen nur mit -MitExec.
+# Beispiel:
+#   sql/config/cfg.Klasse.sql
+#   sql/objects/dbo.usp_Stamm_Aufbau.sql
+#   EXEC dbo.usp_Stamm_Aufbau
+#   sql/objects/dbo.v_Kunde_Umsatz.sql

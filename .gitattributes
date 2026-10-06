@@ -1,0 +1,6 @@
+# Einheitliche Zeilenenden: im Repo immer LF, im Arbeitsverzeichnis unveraendert lassen.
+# Verhindert, dass ein Editor-Wechsel ganze Dateien als geaendert erscheinen laesst.
+* text=auto eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.yml text eol=lf

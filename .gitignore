@@ -1,0 +1,10 @@
+# Zugangsdaten - nie committen
+.env
+# Ausgaben und Wegwerf-Abfragen
+outputs/
+scratch/
+# Werkzeuge und Betriebssystem
+__pycache__/
+.obsidian/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,25 @@
+# kb.config.yaml - die einzige Datei mit projektspezifischen Werten.
+# Werkzeuge (kb_lint, kb_dream) lesen sie; CLAUDE.md verweist auf sie.
+# Beim Einrichten (Skill /einrichten oder von Hand) anpassen, danach lint.
+
+# Anzeigename der Wissensbasis (README, Lage, Traum).
+name: "Meine Wissensbasis"
+
+# Erlaubte domain-Werte im Frontmatter: je Projekt ein Kuerzel (ASCII, klein, kebab-case).
+# 'allgemein' ist immer erlaubt und wird nicht eingetragen.
+# Beispiel: [kundea] oder [kundea, kundeb] fuer eine KB ueber zwei Projekte.
+domains: [projekt]
+
+# Erlaubte topics im Frontmatter. Leer = kb_lint prueft topics nicht.
+# Empfehlung: 8-15 Begriffe der Fachsprache, bei Bedarf ergaenzen (und im log.md vermerken).
+topics: []
+
+# Sammelseiten, die in fast jedem Log-Eintrag vorkommen (offene Punkte, Steckbrief,
+# Entscheidungsregister). Der Traum ignoriert sie bei der Suche nach unverlinkten Seitenpaaren.
+hub_seiten: [projekt-steckbrief, projekt-offene-punkte]
+
+# Optionale Module. Ein ausgeschaltetes Modul kostet nichts; die Dateien duerfen liegen bleiben.
+module:
+  # SQL-Server-Anbindung: tools/sql.py (nur lesend), kb_drift.py, deploy.ps1, tools/tests, sql/.
+  # Regeln: MODUL-DATENBANK.md. Einschalten erst, wenn .env und Lesebenutzer eingerichtet sind.
+  datenbank: false
